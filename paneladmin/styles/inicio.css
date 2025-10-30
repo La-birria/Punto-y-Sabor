@@ -1,0 +1,92 @@
+:root {
+  --azul: #0D1B2A;
+  --beige: #E0E1DD;
+  --dorado: #D4AF37;
+}
+
+/* Sidebar links */
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: var(--beige);
+  transition: 0.2s;
+}
+.link:hover {
+  background: var(--dorado);
+  color: var(--azul);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--azul);
+  padding: 1rem;
+  border-bottom: 1px solid var(--dorado);
+}
+
+/* Botón logout */
+.btn-logout {
+  background: var(--dorado);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-logout:hover {
+  background: #b58d2f;
+  color: white;
+}
+
+/* Tarjetas de resumen */
+.card {
+  background: var(--beige);
+  color: var(--azul);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none; /* Quita subrayado de los enlaces */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Efecto hover de las Tarjetas de resumen */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+  border: 2px solid var(--dorado);
+  filter: brightness(1.05);
+}
+
+
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th {
+  text-align: left;
+  padding: 0.5rem;
+  background: var(--dorado);
+  color: var(--azul);
+}
+.table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.table tr:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/*Estilo de la tablas*/
+.card2 {
+  background: var(--beige);
+  color: var(--azul);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,172 @@
+:root {
+  --vino: #8B0000;
+  --beige: #E9E4D4;
+  --carbon: #1a1a1a;
+  --dorado: #D4AF37;
+}
+
+/* ========== ESTILOS GENERALES ========== */
+body {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--dorado);
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ========== GRID DE CARDS ========== */
+.cards-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(145deg, #202020, #111);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(1);
+}
+
+.card-content {
+  padding: 1.2rem;
+}
+
+.card-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--dorado);
+  margin-bottom: 0.4rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* ========== BOTÓN GENERAL ========== */
+.btn {
+  display: inline-block;
+  background: var(--dorado);
+  color: var(--carbon);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #b58f2c;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #0e0e0e;
+  padding-top: 3rem;
+}
+
+footer .section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+footer aside p {
+  color: #aaa;
+}
+
+footer img.social-icon {
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer img.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* ========== MENÚ RESPONSIVO ========== */
+@media (max-width: 768px) {
+
+  header nav {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    margin: auto;
+    width: 90%;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  footer section {
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  footer aside {
+    margin-bottom: 1rem;
+  }
+
+  footer ul {
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+

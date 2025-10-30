@@ -1,0 +1,151 @@
+:root {
+  --azul: #0D1B2A;
+  --beige: #E0E1DD;
+  --dorado: #D4AF37;
+}
+
+/* Sidebar links */
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: var(--beige);
+  transition: 0.2s;
+}
+.link:hover {
+  background: var(--dorado);
+  color: var(--azul);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--azul);
+  padding: 1rem;
+  border-bottom: 1px solid var(--dorado);
+}
+
+/* Botón logout */
+.btn-logout {
+  background: var(--dorado);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-logout:hover {
+  background: #b58d2f;
+  color: white;
+}
+
+/* ====== Tarjeta contenedora de la tabla====== */
+.card {
+  background: var(--beige);
+  color: var(--azul);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
+}
+
+/* ====== Tabla ====== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden; /* para que los bordes redondeados se vean bien */
+}
+
+/* Cabecera  de la tabla*/
+.table th {
+  text-align: left;
+  padding: 0.75rem;
+  background: var(--dorado);
+  color: var(--azul);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #b58d2f;
+}
+
+/* Filas de la tabla*/
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  vertical-align: middle;
+  transition: background 0.3s ease;
+}
+
+/* Efecto al pasar el puntero de la tabla */
+.table tr:hover {
+  background: rgba(212, 175, 55, 0.08);
+  cursor: pointer;
+}
+
+/* ====== Botones de la tabla(cancelar y finalizar ====== */
+.btn {
+  padding: 0.35rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botón cancelar */
+.btn-cancelar {
+  background: #e63946;
+  color: white;
+}
+.btn-cancelar:hover {
+  background: #c72b36;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(230, 57, 70, 0.5);
+}
+
+/* Botón finalizada */
+.btn-finalizada {
+  background: #2a9d8f;
+  color: white;
+}
+.btn-finalizada:hover {
+  background: #23867c;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(42, 157, 143, 0.5);
+}
+
+/* Ajuste visual para pantallas pequeñas tabla */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.85rem;
+  }
+}
+.btn-restaurar {
+  background-color: var(--dorado);
+  color: var(--azul);
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.btn-restaurar:hover {
+  background-color: var(--beige);
+  color: var(--azul);
+  transform: scale(1.05);
+}
+

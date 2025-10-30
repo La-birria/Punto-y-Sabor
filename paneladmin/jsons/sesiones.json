@@ -1,0 +1,78 @@
+[
+  {
+    "correo": "juan.perez@example.com",
+    "fecha": "2025-10-01",
+    "estado": "activa"
+  },
+  {
+    "correo": "maria.lopez@example.com",
+    "fecha": "2025-10-02",
+    "estado": "activa"
+  },
+  {
+    "correo": "carlos.rivera@example.com",
+    "fecha": "2025-10-03",
+    "estado": "activa"
+  },
+  {
+    "correo": "lucia.martinez@example.com",
+    "fecha": "2025-10-04",
+    "estado": "cerrada"
+  },
+  {
+    "correo": "andres.gomez@example.com",
+    "fecha": "2025-10-05",
+    "estado": "activa"
+  },
+  {
+    "correo": "sofia.torres@example.com",
+    "fecha": "2025-10-06",
+    "estado": "cerrada"
+  },
+  {
+    "correo": "ricardo.mendez@example.com",
+    "fecha": "2025-10-07",
+    "estado": "activa"
+  },
+  {
+    "correo": "valentina.cruz@example.com",
+    "fecha": "2025-10-08",
+    "estado": "cerrada"
+  },
+  {
+    "correo": "alejandro.morales@example.com",
+    "fecha": "2025-10-09",
+    "estado": "activa"
+  },
+  {
+    "correo": "carolina.diaz@example.com",
+    "fecha": "2025-10-10",
+    "estado": "cerrada"
+  },
+  {
+    "correo": "daniel.rojas@example.com",
+    "fecha": "2025-10-11",
+    "estado": "activa"
+  },
+  {
+    "correo": "paula.garcia@example.com",
+    "fecha": "2025-10-12",
+    "estado": "activa"
+  },
+  {
+    "correo": "felipe.vargas@example.com",
+    "fecha": "2025-10-13",
+    "estado": "cerrada"
+  },
+  {
+    "correo": "camila.ortiz@example.com",
+    "fecha": "2025-10-14",
+    "estado": "activa"
+  },
+  {
+    "correo": "diego.santana@example.com",
+    "fecha": "2025-10-15",
+    "estado": "cerrada"
+  }
+]
+

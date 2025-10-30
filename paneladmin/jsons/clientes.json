@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "fecha": "2025-10-01",
+    "estado": "Confirmada"
+  },
+  {
+    "nombre": "María López",
+    "fecha": "2025-10-02",
+    "estado": "Pendiente"
+  },
+  {
+    "nombre": "Carlos Rivera",
+    "fecha": "2025-10-05",
+    "estado": "Cancelada"
+  },
+  {
+    "nombre": "Lucía Martínez",
+    "fecha": "2025-10-07",
+    "estado": "Confirmada"
+  }
+]

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Punto y Sabor — Inicio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/inicio.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[color:var(--carbon)] text-white font-mont min-h-screen">
+
+  <!-- NAV BAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="8" fill="transparent"/>
+        </svg>
+        <div class="leading-tight">
+          <span class="block text-xl font-playfair text-[color:var(--vino)]">Punto y Sabor</span>
+          <span class="block text-xs text-gray-300">El arte del buen corte</span>
+        </div>
+      </a>
+
+      <!-- Links -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#reservas" class="nav-link">Reservas</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Botones -->
+      <aside class="flex items-center gap-3">
+        <a id="loginBtn" href="login.html" class="btn-reserva hidden sm:inline-block">Iniciar sesión</a>
+
+       <!-- Hamburguesa móvil -->
+        <button id="navToggle" aria-controls="mobileMenu" aria-expanded="false"
+                class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:bg-white/5">
+          <svg id="iconOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="iconClose" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </aside>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="md:hidden hidden bg-black/70 border-t border-white/5">
+      <ul class="px-4 pt-4 pb-6 space-y-3">
+        <li><a href="index.html" class="mobile-link">Inicio</a></li>
+        <li><a href="index.html#menu" class="mobile-link">Menú</a></li>
+        <li><a href="index.html#reservas" class="mobile-link">Reservas</a></li>
+        <li><a href="index.html#contacto" class="block hover:text-[color:var(--vino)]">Contacto</a></li>
+        <li><a href="login.html" class="mobile-btn">Iniciar Seción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="pt-20">
+
+    <!-- HERO -->
+    <section class="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+             style="background-image: url('imgs/plato2.png'); opacity: 0.65;" >
+      <div class="absolute inset-0 bg-black/60"></div>
+      <article class="relative z-10 max-w-4xl text-center px-6">
+        <h1 class="hero-title">El arte del buen corte</h1>
+        <p class="hero-sub">Cortes finos, pollo, pescado y asados preparados con pasión y técnica.</p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a href="#menu" class="btn-menu">Explora nuestro menú</a>
+          <a href="#reservas" class="btn-outline">Reservar ahora</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <article>
+        <h2 class="section-title">Sobre Punto y Sabor</h2>
+        <p class="section-text">
+          En Punto y Sabor celebramos el arte del buen corte: seleccionamos la mejor materia prima...
+        </p>
+        <ul class="list-style">
+          <li>Cortes premium seleccionados por expertos.</li>
+          <li>Asados y parrilla con técnicas tradicionales y modernas.</li>
+          <li>Amplia carta de vinos y maridajes.</li>
+        </ul>
+      </article>
+      <figure class="rounded-lg overflow-hidden shadow-lg">
+        <img src="imgs/corte.webp" alt="Interior de restaurante" class="w-full h-64 object-cover">
+      </figure>
+    </section>
+
+    <!-- MENU DESTACADO -->
+    <section id="menu" class="bg-black/40 py-12" >
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="section-title">Menú destacado</h3>
+
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          
+          <article class="card">
+            <img src="imgs/plato.jpg" alt="T-bone" class="w-full h-40 object-cover rounded">
+            <h4 class="mt-3 font-semibold">T-Bone Premium</h4>
+            <p class="text-sm text-gray-300 mt-1">Corte madurado 30 días, servido con mantequilla de hierbas.</p>
+            <p class="mt-2 font-semibold text-[color:var(--vino)]">$28.00</p>
+          </article>
+
+          <article class="card">
+            <img src="imgs/plato2.png" alt="T-bone" class="w-full h-40 object-cover rounded">
+            <h4 class="mt-3 font-semibold">T-Bone Premium</h4>
+            <p class="text-sm text-gray-300 mt-1">Corte madurado 30 días, servido con mantequilla de hierbas.</p>
+            <p class="mt-2 font-semibold text-[color:var(--vino)]">$28.00</p>
+          </article>
+
+          <article class="card">
+            <img src="imgs/plato3.jpeg" alt="T-bone" class="w-full h-40 object-cover rounded">
+            <h4 class="mt-3 font-semibold">T-Bone Premium</h4>
+            <p class="text-sm text-gray-300 mt-1">Corte madurado 30 días, servido con mantequilla de hierbas.</p>
+            <p class="mt-2 font-semibold text-[color:var(--vino)]">$28.00</p>
+          </article>
+        </div>
+      
+        <div id="divmenu">
+          <div id="botonmas">
+            <a id="botondemas" href="menu.html" class="mobile-link">Más</a> 
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- RESERVAS -->
+<section id="reservas" class="max-w-4xl mx-auto px-6 py-12">
+  <h3 class="section-title">Reservas</h3>
+  <form class="form-reserva" id="formReserva">
+    <fieldset class="grid sm:grid-cols-2 gap-4">
+      <input type="text" id="nombre" placeholder="Nombre" required class="input-form">
+      <input type="tel" id="telefono" placeholder="Teléfono" required class="input-form">
+    </fieldset>
+    <fieldset class="grid sm:grid-cols-3 gap-4">
+      <input type="date" id="fecha" class="input-form" required>
+      <input type="time" id="hora" class="input-form" required>
+      <select id="personas" class="input-form">
+        <option>2 personas</option>
+        <option>4 personas</option>
+        <option>6 personas</option>
+      </select>
+    </fieldset>
+    <textarea id="comentarios" placeholder="Comentarios (opcional)" class="input-form"></textarea>
+    <button type="submit" class="btn-submit">Enviar reserva</button>
+  </form>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-black/80 mt-12">
+    <section class="max-w-6xl mx-auto px-6 py-10 text-gray-300 md:flex md:justify-between">
+      <aside>
+        <h4 class="section-title">Punto y Sabor</h4>
+        <p class="text-sm mt-2">Av. Principal #123, San Salvador</p>
+        <p class="text-sm mt-1">Lun-Dom: 11:00 — 23:00</p>
+      </aside>
+      <aside>
+        <h5 class="text-sm font-semibold">Redes</h5>
+        <ul class="mt-2 flex gap-3">
+          <a href="https://www.instagram.com/tuperfil" target="_blank">
+            <img src="imgs/icono.png" alt="Instagram" width="32" height="32" class="social-icon">
+          </a>
+          <a href="https://www.facebook.com/tuperfil" target="_blank">
+            <img src="imgs/icono2.png" alt="Instagram" width="32" height="32" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/tuperfil" target="_blank">
+            <img src="imgs/icono3.png" alt="Instagram" width="32" height="32" class="social-icon">
+          </a>
+
+        </ul>
+      </aside>
+    </section>
+    <p class="mt-8 text-sm text-gray-500 border-t border-white/5 pt-6 text-center">
+      &copy; 2025 Punto y Sabor — Todos los derechos reservados
+    </p>
+  </footer>
+
+  <!-- Script -->
+  <script src="public/script.js"></script>
+  <script src="public/backendderesrvas.js"></script>
+  <script src="public/login.js"></script>
+  <script src="public/hamburgueboton.js"></script>
+  <script src="public/icono.js"></script>
+</body>
+</html> 

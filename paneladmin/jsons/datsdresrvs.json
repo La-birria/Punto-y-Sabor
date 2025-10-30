@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "nombre": "Carlos Méndez",
+  "correo": "carlosmendez@example.com",
+  "telefono": "7777-8888",
+  "fecha": "2025-10-09",
+  "hora": "7:30 PM",
+  "personas": 4,
+  "estado": "Pendiente",
+  "comentarios": "Mesa junto a la ventana, por favor."
+}

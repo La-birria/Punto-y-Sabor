@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Admin-soporte</title>
+  <link rel="stylesheet" href="styles/soporte.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[color:var(--azul)] text-[color:var(--beige)] font-sans">
+
+  <!-- Contenedor general -->
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-64 bg-[color:var(--azul)] border-r border-[color:var(--dorado)] hidden md:block">
+      <div class="p-4 text-xl font-bold text-[color:var(--dorado)]">
+        Admin Panel
+      </div>
+      <nav class="mt-6 space-y-2">
+        <a href="paneladmin.html" class="link">Dashboard</a>
+        <a href="clientes.html" class="link">Clientes</a>
+        <a href="sesiones.html" class="link">Sesiones</a>
+        <a href="reservas.html" class="link">Reservas</a>
+        <a href="soporte.html" class="link">Soporte</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Header -->
+      <header class="header">
+        <!-- Botón menú móvil -->
+        <button id="menuBtn" class="md:hidden text-[color:var(--dorado)]">
+          ☰
+        </button>
+        <h1 class="text-lg font-semibold">Soporte</h1>
+        <button id="logoutBtn" class="btn-logout">Cerrar Sesión</button>
+      </header>
+
+      <!-- Main -->
+      <main class="p-6 space-y-6 overflow-y-auto">
+        <div class="card">
+          <h2 class="font-bold mb-4">Registro de reservas</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>A nombre de:</th>
+                <th>Fecha</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody id="reservas-tbody">
+              <!-- Aquí se insertarán los datos desde reservasparasoporte.js -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="public/menumovil.js"></script>
+  <script src="public/layaut.js"></script>
+  <script src="public/reservasparasoporte.js"></script>
+  <script src="public/restaurarReserva.js"></script>
+</body>
+</html>

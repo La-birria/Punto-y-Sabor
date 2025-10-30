@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "fecha": "2025-10-10",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 2,
+    "nombre": "María López",
+    "fecha": "2025-10-09",
+    "estado": "Confirmada"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Gómez",
+    "fecha": "2025-10-08",
+    "estado": "Finalizada"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Martínez",
+    "fecha": "2025-10-07",
+    "estado": "Cancelada"
+  },
+  {
+    "id": 5,
+    "nombre": "Luis Hernández",
+    "fecha": "2025-10-06",
+    "estado": "En revisión"
+  },
+  {
+    "id": 6,
+    "nombre": "Rosa Castillo",
+    "fecha": "2025-10-05",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 7,
+    "nombre": "Miguel Rivera",
+    "fecha": "2025-10-04",
+    "estado": "Confirmada"
+  },
+  {
+    "id": 8,
+    "nombre": "Daniela Flores",
+    "fecha": "2025-10-03",
+    "estado": "Finalizada"
+  },
+  {
+    "id": 9,
+    "nombre": "Ricardo Salazar",
+    "fecha": "2025-10-02",
+    "estado": "Aplazada"
+  },
+  {
+    "id": 10,
+    "nombre": "Karla Ortiz",
+    "fecha": "2025-10-11",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 11,
+    "nombre": "Esteban Morales",
+    "fecha": "2025-10-12",
+    "estado": "Confirmada"
+  },
+  {
+    "id": 12,
+    "nombre": "Gabriela Cruz",
+    "fecha": "2025-10-01",
+    "estado": "Rechazada"
+  },
+  {
+    "id": 13,
+    "nombre": "Gabriel Saragoza",
+    "fecha": "2025-10-01",
+    "estado": "Rechazada"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Administrador",
+    "email": "admin@puntoysabor.com",
+    "password": "12345",
+    "rol": "admin"
+  },
+  {
+    "nombre": "Gabriel Amaya",
+    "email": "gabriel@gmail.com",
+    "password": "123",
+    "rol": "usuario"
+  },
+  {
+    "nombre": "Steven Nuila",
+    "email": "steven@example.com",
+    "password": "123",
+    "rol": "usuario"
+  },
+  
+  { "id": 1, "nombre": "Juan Pérez", "fecha": "2025-10-23" },
+  { "id": 2, "nombre": "María López", "fecha": "2025-10-23" },
+  { "id": 3, "nombre": "Carlos Rivera", "fecha": "2025-10-22" },
+    {
+    "id": 1,
+    "username": "AlejandroRuano",
+    "password": "12345",
+    "correo": "alejandro@example.com",
+    "rol": "cliente"
+  }
+
+]

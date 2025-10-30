@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administrador</title>
+  <link rel="stylesheet" href="styles/inicio.css"> <!-- Aquí importamos el CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[color:var(--azul)] text-[color:var(--beige)] font-sans">
+
+  <!-- Contenedor general -->
+  <div class="flex h-screen">
+
+
+<script>
+  const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
+  if (!usuarioActivo || usuarioActivo.rol.toLowerCase() !== "admin") {
+    alert("Acceso denegado ❌");
+    window.location.href = "../login.html";
+  }
+</script>
+
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-64 bg-[color:var(--azul)] border-r border-[color:var(--dorado)] hidden md:block">
+      <div class="p-4 text-xl font-bold text-[color:var(--dorado)]">
+        Admin Panel
+      </div>
+      <nav class="mt-6 space-y-2">
+        <a href="paneladmin.html" class="link">Dashboard</a>
+        <a href="clientes.html" class="link">Clientes</a>
+        <a href="sesiones.html" class="link">Sesiones</a>
+        <a href="reservas.html" class="link">Reservas</a>
+        <a href="soporte.html" class="link">Soporte</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Header -->
+      <header class="header">
+        <!-- Botón menú móvil -->
+        <button id="menuBtn" class="md:hidden text-[color:var(--dorado)]">
+          ☰
+        </button>
+        <h1 class="text-lg font-semibold">Panel de Administrador</h1>
+        <button id="logoutBtn" class="btn-logout">Cerrar Sesión</button>
+      </header>
+  
+      <!-- Main -->
+      <main class="p-6 space-y-6 overflow-y-auto">
+
+<!-- Tarjetas resumen enlazadas -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <!-- Usuarios nuevos -->
+  <a href="clientes.html" class="card">
+    <div>
+      <h2 class="font-bold text-lg">Usuarios nuevos</h2>
+      <p id="usuarios-nuevos" class="text-2xl mt-2">0</p>
+    </div>
+  </a>
+
+  <!-- Sesiones activas -->
+  <a href="sesiones.html" class="card">
+    <div>
+      <h2 class="font-bold text-lg">Sesiones activas</h2>
+      <p id="sesiones-activas" class="text-2xl mt-2">0</p>
+    </div>
+  </a>
+
+  <!-- Reservas hoy -->
+  <a href="reservas.html" class="card">
+    <div>
+      <h2 class="font-bold text-lg">Reservas hoy</h2>
+      <p id="reservas-hoy" class="text-2xl mt-2">0</p>
+    </div>
+  </a>
+</div>
+
+
+
+        <!-- Tabla de ejemplo -->
+        <div class="card2">
+          <h2 class="font-bold mb-4">Últimas Reservas</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juan Pérez</td>
+                <td>2025-10-01</td>
+                <td>Confirmada</td>
+              </tr>
+              <tr>
+                <td>María López</td>
+                <td>2025-10-02</td>
+                <td>Pendiente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Script JS para menú móvil -->
+  <script src="public/menumovil.js"></script>
+  <script>
+  document.getElementById("cerrar-sesion").addEventListener("click", (e) => {
+    e.preventDefault(); // evita que el botón recargue o haga algo raro
+    localStorage.removeItem("usuarioActivo"); // elimina la sesión activa
+    alert("Has cerrado sesión correctamente 👋");
+    window.location.href = "layaut.html"; // redirige al layout principal
+  });
+</script>
+<script src="public/menumovil.js"></script>
+<script src="public/layaut.js"></script>
+<script src="public/paneldata.js"></script>
+
+
+
+</body>
+</html>

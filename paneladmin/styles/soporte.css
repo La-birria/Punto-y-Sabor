@@ -1,0 +1,69 @@
+:root {
+  --azul: #0D1B2A;
+  --beige: #E0E1DD;
+  --dorado: #D4AF37;
+}
+
+/* Sidebar links */
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: var(--beige);
+  transition: 0.2s;
+}
+.link:hover {
+  background: var(--dorado);
+  color: var(--azul);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--azul);
+  padding: 1rem;
+  border-bottom: 1px solid var(--dorado);
+}
+
+/* Botón logout */
+.btn-logout {
+  background: var(--dorado);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-logout:hover {
+  background: #b58d2f;
+  color: white;
+}
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th {
+  text-align: left;
+  padding: 0.5rem;
+  background: var(--dorado);
+  color: var(--azul);
+}
+.table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.table tr:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/*estilo de la tabla*/
+.card {
+  background: var(--beige);
+  color: var(--azul);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,64 @@
+:root {
+  --azul: #0D1B2A;
+  --beige: #E0E1DD;
+  --dorado: #D4AF37;
+}
+
+/* Sidebar links */
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: var(--beige);
+  transition: 0.2s;
+}
+.link:hover {
+  background: var(--dorado);
+  color: var(--azul);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--azul);
+  padding: 1rem;
+  border-bottom: 1px solid var(--dorado);
+}
+
+/* Botón logout */
+.btn-logout {
+  background: var(--dorado);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-logout:hover {
+  background: #b58d2f;
+  color: white;
+}
+
+/* Tarjeta */
+.card {
+  background: var(--beige);
+  color: var(--azul);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Botones de acción */
+.btn-accion {
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-accion:hover {
+  transform: scale(1.05);
+}

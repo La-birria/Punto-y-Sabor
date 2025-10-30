@@ -1,0 +1,284 @@
+:root {
+  --vino: #B22222;
+  --carbon: #2F2F2F;
+  --dorado: #D4AF37;
+}
+
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-mont { font-family: 'Source Sans', sans-serif; }
+
+/* NAVBAR */
+header nav ul li a,
+.nav-link {
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover,
+.nav-link:hover {
+  color: var(--dorado);
+}
+
+.btn-reserva {
+  background: var(--dorado);
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+.btn-reserva:hover {
+  opacity: 0.9;
+}
+
+/* Mobile menu */
+#mobileMenu {
+  background: rgba(0, 0, 0, 0.9); /* fondo más sólido para mejor contraste */
+  backdrop-filter: blur(8px); /* efecto moderno de difuminado */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#mobileMenu ul {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Enlaces del menú */
+#mobileMenu ul li a,
+.mobile-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#mobileMenu ul li a:hover,
+.mobile-link:hover {
+  color: var(--dorado);
+  transform: translateX(4px); /* pequeño desplazamiento moderno */
+}
+
+/* Botón de Iniciar Sesión */
+.mobile-btn {
+  display: block;
+  text-align: center;
+  background: var(--dorado);
+  color: black; /* ✅ texto en negro */
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.mobile-btn:hover {
+  background: #c19d2b; /* dorado más oscuro al pasar */
+  transform: scale(1.05);
+}
+
+/* Ajuste de visibilidad y animación del menú */
+#mobileMenu.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+#mobileMenu:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+/* HERO */
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--dorado);
+  line-height: 1.2;
+}
+.hero-sub {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+}
+
+.btn-menu {
+  background: var(--vino);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn-menu:hover {
+  background: #8f1a1a;
+}
+
+.btn-outline {
+  border: 1px solid var(--dorado);
+  color: var(--dorado);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+
+/* SECCIONES */
+section .section-title,
+h2.section-title,
+h3.section-title {
+  font-size: 1.875rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--vino);
+}
+
+.section-text {
+  margin-top: 1rem;
+  color: #e5e7eb;
+  line-height: 1.75;
+}
+
+.list-style {
+  margin-top: 1rem;
+  color: #d1d5db;
+  list-style: disc;
+  list-style-position: inside;
+  gap: 0.5rem;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* agranda la card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* le da más profundidad */
+}
+
+/* FORMULARIO */
+.form-reserva {
+  margin-top: 1.5rem;
+  background: rgba(0,0,0,0.3);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.input-form {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(255,255,255,0.05);
+  color: white;
+  outline: none;
+}
+
+.input-form::placeholder {
+  color: #9ca3af;
+}
+
+.btn-submit {
+  background: var(--dorado);
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/*iconos de redes*/
+.social-icon {
+  width: 32px;   /* tamaño del icono */
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* agranda el icono */
+  filter: brightness(1.2); /* lo hace un poquito más brillante */
+}
+
+/*boton  de mas del menu destacado*/
+#botonmas{
+  background: var(--dorado);
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 5%;
+  width: 50%;
+   text-decoration: none;
+}
+
+#divmenu {
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center;     /* Centra vertical si el div tiene altura */
+  padding: auto;          /* opcional */
+  text-decoration: none;
+  color: black;
+}
+
+#botondemas {
+  display: block;
+  background: var(--dorado); /* color de fondo */
+  color: black;              /* color del texto */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;     /* quita el subrayado */
+  transition: background 0.3s ease;
+}
+
+#botondemas:hover {
+  background: #c19d2b; /* dorado más oscuro */
+  color: white;        /* cambia el color del texto al pasar */
+}
+
+#tomahawka {
+  width: 100%;
+  height: 400px;
+
+  background-image: url("imgs/plato2");  /* ruta de tu imagen */
+  background-size: cover;              /* ajusta la imagen a todo el contenedor */
+  background-position: center;         /* centra la imagen */
+  background-repeat: no-repeat;        
+}

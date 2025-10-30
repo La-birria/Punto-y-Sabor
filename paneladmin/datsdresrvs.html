@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos de la Reserva</title>
+  <link rel="stylesheet" href="styles/datsdresrvs.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[color:var(--azul)] text-[color:var(--beige)] font-sans">
+
+  <!-- Contenedor general -->
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-64 bg-[color:var(--azul)] border-r border-[color:var(--dorado)] hidden md:block">
+      <div class="p-4 text-xl font-bold text-[color:var(--dorado)]">
+        Admin Panel
+      </div>
+      <nav class="mt-6 space-y-2">
+        <a href="paneladmin.html" class="link">Dashboard</a>
+        <a href="clientes.html" class="link">Clientes</a>
+        <a href="sesiones.html" class="link">Sesiones</a>
+        <a href="reservas.html" class="link">Reservas</a>
+        <a href="soporte.html" class="link">Soporte</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Header -->
+      <header class="header">
+        <button id="menuBtn" class="md:hidden text-[color:var(--dorado)]">
+          ☰
+        </button>
+        <h1 class="text-lg font-semibold">Datos de la Reserva</h1>
+        <button id="logoutBtn" class="btn-logout">Cerrar Sesión</button>
+      </header>
+
+      <!-- Main -->
+      <main class="p-6 space-y-6 overflow-y-auto">
+
+        <div class="card">
+          <h2 class="font-bold mb-4">Detalles de la reserva</h2>
+          <table class="table w-full border border-[color:var(--dorado)] rounded-lg overflow-hidden">
+            <thead class="bg-[color:var(--dorado)] text-[color:var(--azul)]">
+              <tr>
+                <th class="py-2 px-4 text-left">Datos generales</th>
+                <th class="py-2 px-4 text-left"></th>
+              </tr>
+            </thead>
+            <tbody id="detalle-reserva">
+              <!-- Aquí se insertarán los datos con datsdresrvs.js -->
+            </tbody>
+          </table>
+
+          <div class="flex flex-col sm:flex-row gap-3 mt-6">
+            <button id="btnCancelar" class="btn-accion bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-md w-full sm:w-auto">Cancelar</button>
+            <button id="btnFinalizar" class="btn-accion bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md w-full sm:w-auto">Finalizar</button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="public/datsdresrvs.js"></script>
+  <script src="public/menumovil.js"></script>
+  <script src="public/layaut.js"></script>
+</body>
+</html>

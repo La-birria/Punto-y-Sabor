@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "nombre": "T-bone Premiun",
+    "descripcion": "Tortilla de maíz con cerdo marinado y piña",
+    "precio": 3.50,
+    "imagen": "imgs/plato.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Tomahawk",
+    "descripcion": "Tortilla de harina con queso fundido",
+    "precio": 2.75,
+    "imagen": "imgs/plato2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato3.jpeg"
+  },
+  {
+    "id": 1,
+    "nombre": "Tacos al Pastor",
+    "descripcion": "Tortilla de maíz con cerdo marinado y piña",
+    "precio": 3.50,
+    "imagen": "imgs/plato4.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Quesadillas",
+    "descripcion": "Tortilla de harina con queso fundido",
+    "precio": 2.75,
+    "imagen": "imgs/plato5.jpeg"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato6.jpg"
+  },
+  {
+    "id": 1,
+    "nombre": "Chuleta de Cerdo Ahumada",
+    "descripcion": "Tortilla de maíz con cerdo marinado y piña",
+    "precio": 3.50,
+    "imagen": "imgs/plato7.jpeg"
+  },
+  {
+    "id": 2,
+    "nombre": "Quesadillas",
+    "descripcion": "Tortilla de harina con queso fundido",
+    "precio": 2.75,
+    "imagen": "imgs/plato2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato3.jpeg"
+  },
+  {
+    "id": 1,
+    "nombre": "Tacos al Pastor",
+    "descripcion": "Tortilla de maíz con cerdo marinado y piña",
+    "precio": 3.50,
+    "imagen": "imgs/plato.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Quesadillas",
+    "descripcion": "Tortilla de harina con queso fundido",
+    "precio": 2.75,
+    "imagen": "imgs/plato2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato3.jpeg"
+  },
+  {
+    "id": 1,
+    "nombre": "Tacos al Pastor",
+    "descripcion": "Tortilla de maíz con cerdo marinado y piña",
+    "precio": 3.50,
+    "imagen": "imgs/plato.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Quesadillas",
+    "descripcion": "Tortilla de harina con queso fundido",
+    "precio": 2.75,
+    "imagen": "imgs/plato2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato3.jpeg"
+  },
+  {
+    "id": 3,
+    "nombre": "Bebida de Horchata",
+    "descripcion": "Refrescante horchata de morro",
+    "precio": 1.50,
+    "imagen": "imgs/plato3.jpeg"
+  }
+
+]
