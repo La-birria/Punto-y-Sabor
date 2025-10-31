@@ -4,58 +4,55 @@
     "nombre": "Tomahawk Premium",
     "descripcion": "Corte grueso de costilla de res con hueso, tierno y jugoso, ideal para parrilla.",
     "precio": 22.50,
-    "imagen": "imgs/tomahawk.jpg"
+    "imagen": "imgs/plato2.png"
   },
   {
     "id": 2,
     "nombre": "T-Bone Steak",
     "descripcion": "Clásico corte con hueso en forma de T, combinación de lomo y solomillo en un solo corte.",
     "precio": 19.80,
-    "imagen": "imgs/tbone.jpg"
+    "imagen": "imgs/plato.jpg"
   },
   {
     "id": 3,
     "nombre": "Ribeye",
     "descripcion": "Corte marmoleado con alto contenido de grasa intramuscular, sabor intenso y textura suave.",
     "precio": 18.75,
-    "imagen": "imgs/ribeye.jpg"
+    "imagen": "imgs/corte.webp"
   },
   {
     "id": 4,
     "nombre": "New York Strip",
     "descripcion": "Corte magro y tierno del lomo corto, perfecto para los que disfrutan de un sabor equilibrado.",
     "precio": 17.50,
-    "imagen": "imgs/newyork.jpg"
+    "imagen": "imgs/plato6.jpg"
   },
   {
     "id": 5,
     "nombre": "Picanha",
     "descripcion": "Corte brasileño con una capa de grasa que potencia su jugosidad al asarse.",
     "precio": 20.00,
-    "imagen": "imgs/picanha.jpg"
+    "imagen": "imgs/plato4.jpg"
   },
   {
     "id": 6,
     "nombre": "Porterhouse",
     "descripcion": "Versión más grande del T-bone, con una porción generosa de solomillo y lomo.",
     "precio": 23.00,
-    "imagen": "imgs/porterhouse.jpg"
+    "imagen": "imgs/plato7.jpeg"
   },
   {
     "id": 7,
     "nombre": "Entraña Fina",
     "descripcion": "Corte del diafragma de res, sabroso y de textura característica, ideal para asar.",
     "precio": 15.90,
-    "imagen": "imgs/entrana.jpg"
+    "imagen": "imgs/plato8.jpg"
   },
   {
     "id": 8,
     "nombre": "Costillas BBQ",
     "descripcion": "Costillas de res marinadas en salsa BBQ artesanal y asadas lentamente hasta quedar tiernas.",
     "precio": 16.75,
-    "imagen": "imgs/costillas.jpg"
+    "imagen": "imgs/plato5.jpeg"
   }
 ]
-
-
-
